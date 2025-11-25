@@ -10,50 +10,21 @@
   <meta property="og:image" content="https://Batako11.github.io/img/1.webp">
   <meta property="og:url" content="https://Batako11.github.io">
   <meta property="og:type" content="website">
-  <style>
-    :root{--green:#10b981;--dark:#0f172a;--light:#e2e8f0;--gray:#94a3b8;}
-    *{margin:0;padding:0;box-sizing:border-box;}
-    body{font-family:system-ui,-apple-system,sans-serif;background:var(--dark);color:var(--light);line-height:1.6;overflow-x:hidden;}
-    nav{position:sticky;top:0;background:#1e293b;padding:18px 20px;z-index:1000;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #334155;}
-    nav a{color:var(--gray);text-decoration:none;font-weight:500;transition:0.3s;}
-    nav a:hover{color:var(--green);}
-    .logo{font-size:1.4em;font-weight:900;color:var(--green);}
-    .menu{display:flex;gap:30px;}
-    #hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;}
-    #hamburger span{width:25px;height:3px;background:var(--green);transition:0.3s;}
-    header{padding:100px 20px 80px;text-align:center;background:linear-gradient(135deg,#1e293b,#0f172a);}
-    h1{font-size:3.3em;font-weight:900;color:var(--green);}
-    .tagline{font-size:1.35em;max-width:800px;margin:20px auto 0;color:#cbd5e1;}
-    .shots{display:flex;flex-wrap:wrap;gap:25px;justify-content:center;padding:40px 20px;}
-    .shots img{max-width:280px;width:100%;height:auto;border-radius:20px;box-shadow:0 20px 40px rgba(0,0,0,0.6);transition:0.4s;}
-    .shots img:hover{transform:translateY(-12px);box-shadow:0 30px 60px rgba(0,0,0,0.7);}
-    .features{max-width:1100px;margin:0 auto;padding:60px 20px;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:35px;}
-    .feature{background:rgba(255,255,255,0.04);border-radius:18px;padding:35px;text-align:center;border:1px solid rgba(255,255,255,0.08);transition:0.4s;}
-    .feature:hover{transform:translateY(-12px);box-shadow:0 25px 50px rgba(0,0,0,0.6);}
-    .feature h3{font-size:1.5em;margin:16px 0;color:var(--green);}
-    .btn{background:var(--green);color:white;padding:20px 55px;font-size:1.35em;font-weight:600;border-radius:14px;text-decoration:none;display:inline-block;margin:30px;box-shadow:0 10px 35px rgba(16,185,129,0.5);transition:0.3s;}
-    .btn:hover{background:#059669;transform:translateY(-4px);}
-    footer{padding:50px 20px;text-align:center;color:#64748b;font-size:0.9em;background:#1e293b;}
-    @media(max-width:768px){
-      .menu{position:fixed;top:0;left:-100%;width:70%;height:100vh;background:#1e293b;padding:80px 30px;transition:0.4s;display:block;}
-      .menu.active{left:0;}
-      #hamburger{display:flex;}
-      nav{justify-content:space-between;}
-      .menu a{display:block;margin:25px 0;font-size:1.3em;}
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <nav>
-    <div class="logo">Udus Forum</div>
-    <div class="menu" id="menu">
-      <a href="about.html">About</a>
-      <a href="download.html">Download</a>
-      <a href="privacy.html">Privacy</a>
-      <a href="contact.html">Contact</a>
-    </div>
-    <div id="hamburger" onclick="document.getElementById('menu').classList.toggle('active')">
-      <span></span><span></span><span></span>
+    <div class="container">
+      <div class="logo">Udus Forum</div>
+      <div class="menu" id="menu">
+        <a href="about.html">About</a>
+        <a href="download.html">Download</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div id="hamburger" onclick="document.getElementById('menu').classList.toggle('active')">
+        <span></span><span></span><span></span>
+      </div>
     </div>
   </nav>
 
@@ -61,19 +32,22 @@
     <h1>Udus Forum</h1>
     <p class="tagline">The private campus app for Usmanu Danfodiyo University Sokoto students — real forums, events, study groups & offline mode.</p>
   </header>
-
-  <div class="shots">
+  <div class="container">
+    <div class="shots">
     <img src="img/1.webp" alt="Home"><img src="img/2.webp" alt="Chat"><img src="img/3.webp" alt="Events">
     <img src="img/4.webp" alt="Profile"><img src="img/5.webp" alt="Offline">
-  </div>
+    </div>
 
-  <div class="features">
+    <div class="features">
     <div class="feature"><h3>Real-time Forums</h3><p>Department chats, general discussions, anonymous posting.</p></div>
     <div class="feature"><h3>Events & Alerts</h3><p>Never miss lectures, tests, or campus hangouts.</p></div>
     <div class="feature"><h3>Offline First</h3><p>Read & post even when campus network is dead.</p></div>
-  </div>
+    </div>
 
-  <a href="download.html" class="btn">Download Latest APK</a>
+    <div class="center" style="margin:28px 0 40px;">
+      <a href="download.html" class="btn">Download Latest APK</a>
+    </div>
+  </div>
 
   <footer>© 2025 Udus Forum • Made with ❤️ by a UDUS student • Sokoto, Nigeria</footer>
 
