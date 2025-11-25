@@ -38,6 +38,9 @@ nav{
 #hamburger{display:none;cursor:pointer}
 #hamburger span{display:block;width:24px;height:3px;background:var(--primary);margin:4px 0;border-radius:3px}
 
+/* When nav contains a centered .container (we wrap nav content), keep layout */
+nav > .container{display:flex;align-items:center;justify-content:space-between}
+
 header{padding:80px 0 40px;text-align:center;background:linear-gradient(180deg,rgba(30,41,59,0.1),transparent)}
 header h1{font-size:2.8rem;color:var(--primary);font-weight:800;line-height:1}
 .tagline{max-width:820px;margin:16px auto;color:#cbd5e1;font-weight:400}
