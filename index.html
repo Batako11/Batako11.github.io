@@ -3,58 +3,86 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Udus Forum – Campus App for UDUS Students</title>
-  <meta name="description" content="Real-time forums, events, study groups & offline mode for UDUS Sokoto students.">
-  <meta property="og:title" content="Udus Forum – The Campus App for UDUS">
-  <meta property="og:description" content="Real forums • Events • Offline mode • No ads • Made by a UDUS student">
-  <meta property="og:image" content="https://Batako11.github.io/img/1.webp">
-  <meta property="og:url" content="https://Batako11.github.io">
+  <title>UniVerse – Your Campus. Your Universe.</title>
+  <meta name="description" content="Private social app for Nigerian university students. Campus-only feed, stories, channels — no outsiders, no lecturers.">
+  <meta property="og:title" content="UniVerse – Private Campus Social App">
+  <meta property="og:description" content="Your school. Your rules. Join the private universe for Nigerian university students.">
+  <meta property="og:image" content="https://yourdomain.com/screenshot1.webp">
+  <meta property="og:url" content="https://yourdomain.com">
   <meta property="og:type" content="website">
   <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
   <nav>
     <div class="container">
-      <div class="logo">Udus Forum</div>
+      <div class="logo">UniVerse</div>
       <div class="menu" id="menu">
+        <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="download.html">Download</a>
         <a href="privacy.html">Privacy</a>
         <a href="contact.html">Contact</a>
       </div>
-      <div id="hamburger" onclick="document.getElementById('menu').classList.toggle('active')">
-        <span></span><span></span><span></span>
-      </div>
+      <div id="hamburger"><span></span><span></span><span></span></div>
     </div>
   </nav>
 
   <header>
-    <h1>Udus Forum</h1>
-    <p class="tagline">The private campus app for Usmanu Danfodiyo University Sokoto students — real forums, events, study groups & offline mode.</p>
+    <h1>UniVerse</h1>
+    <p class="tagline">Your Campus. Your Universe.</p>
+    <p class="subtitle">Private social app for Nigerian university students.<br>No outsiders. No lecturers. Just your school.</p>
+    <a href="download.html" class="btn hero-btn">Download UniVerse APK</a>
   </header>
+
   <div class="container">
     <div class="shots">
-    <img src="img/1.webp" alt="Home"><img src="img/2.webp" alt="Chat"><img src="img/3.webp" alt="Events">
-    <img src="img/4.webp" alt="Profile"><img src="img/5.webp" alt="Offline">
+      <img src="img/feed.webp" alt="Feed">
+      <img src="img/stories.webp" alt="Stories">
+      <img src="img/channels.webp" alt="Channels">
+      <img src="img/profile.webp" alt="Profile">
     </div>
 
     <div class="features">
-    <div class="feature"><h3>Real-time Forums</h3><p>Department chats, general discussions, anonymous posting.</p></div>
-    <div class="feature"><h3>Events & Alerts</h3><p>Never miss lectures, tests, or campus hangouts.</p></div>
-    <div class="feature"><h3>Offline First</h3><p>Read & post even when campus network is dead.</p></div>
+      <div class="feature">
+        <h3>Campus-Only Feed</h3>
+        <p>Only students from your university can see and post. Real privacy.</p>
+      </div>
+      <div class="feature">
+        <h3>Stories & Channels</h3>
+        <p>Share moments, join general, memes, confessions, academics — your way.</p>
+      </div>
+      <div class="feature">
+        <h3>100% Anonymous Option</h3>
+        <p>Post freely without fear. Your identity stays hidden.</p>
+      </div>
+      <div class="feature">
+        <h3>No Ads. No Tracking.</h3>
+        <p>Made by students, for students. Clean experience only.</p>
+      </div>
     </div>
 
-    <div class="center" style="margin:28px 0 40px;">
-      <a href="download.html" class="btn">Download Latest APK</a>
+    <div class="center" style="margin:60px 0;">
+      <h2>Join thousands of students already on UniVerse</h2>
+      <a href="download.html" class="btn hero-btn">Get the App Now</a>
+    </div>
+
+    <div class="trust">
+      <p>Made with ❤️ by Nigerian university students • Starting with UDUS & BUK</p>
     </div>
   </div>
 
-  <footer>© 2025 Udus Forum • Made with ❤️ by a UDUS student • Sokoto, Nigeria</footer>
+  <footer>© 2025 UniVerse • Private Campus Social App • Nigeria</footer>
 
   <script>
-    // Tiny script only for mobile drawer (7 lines)
-    document.getElementById('hamburger').addEventListener('click',()=>document.getElementById('menu').classList.toggle('active'));
-    document.querySelectorAll('.menu a').forEach(a=>a.addEventListener('click',()=>document.getElementById('menu').classList.remove('active')));
+    document.getElementById('hamburger').addEventListener('click', () => 
+      document.getElementById('menu').classList.toggle('active')
+    );
+    document.querySelectorAll('.menu a').forEach(a => 
+      a.addEventListener('click', () => 
+        document.getElementById('menu').classList.remove('active')
+      )
+    );
   </script>
 </body>
 </html>
